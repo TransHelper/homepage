@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "home": "首页",
+    "projects": "项目",
+    "team": "成员",
+    "contact": "联系我们",
+    "conduct": "成员守则"
+  },
+  "hero": {
+    "title1": "Trans-Helper",
+    "subtitle": "专注构建面向跨性别群体的开源软件与基础设施。",
+    "motto": "为社群而生，由社群共建。",
+    "cta": "探索项目",
+    "demo": "成员列表",
+    "slogan0": "为跨性别权益而开源"
+  },
+  "features": {
+    "oss": "完全开源",
+    "community": "社区驱动",
+    "transparent": "隐私优先",
+    "permissive": "跨性别聚焦"
+  },
+  "projects": {
+    "title": "我们的项目",
+    "subtitle": "我们为跨性别群体构建和维护的开源工具",
+    "noDescription": "暂无描述",
+    "empty": "暂无项目",
+    "error": "项目加载失败，请稍后重试。"
+  },
+  "team": {
+    "title": "认识我们的团队",
+    "subtitle": "为社群构建工具的社群成员",
+    "back": "返回团队",
+    "empty": "暂无团队成员。"
+  },
+  "social": {
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "discord": "Discord",
+    "matrix": "Matrix",
+    "telegram": "Telegram",
+    "bilibili": "Bilibili",
+    "email": "邮箱"
+  },
+  "footer": {
+    "copyright": "保留所有权利。"
+  }
+}

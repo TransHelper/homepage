@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "team": "Members",
+    "contact": "Contact",
+    "conduct": "Code of Conduct"
+  },
+  "hero": {
+    "title1": "Trans-Helper",
+    "subtitle": "Building practical open-source software and infrastructure for the transgender community.",
+    "motto": "Built for and by the community.",
+    "cta": "Explore projects",
+    "demo": "Meet the team",
+    "slogan0": "Open source engineering for trans rights",
+    "slogan1": "Privacy-first architecture",
+    "slogan2": "Real needs, real solutions",
+    "slogan3": "Community-driven development"
+  },
+  "features": {
+    "oss": "100% open source",
+    "community": "Community driven",
+    "transparent": "Privacy first",
+    "permissive": "Trans focused"
+  },
+  "projects": {
+    "title": "Our projects",
+    "subtitle": "Open-source tools we build for the transgender community",
+    "noDescription": "No description provided.",
+    "empty": "No projects found.",
+    "error": "Failed to load projects. Please try again later."
+  },
+  "team": {
+    "title": "Meet the team",
+    "subtitle": "Community members building tools for our community",
+    "back": "Back to team",
+    "empty": "No team members found."
+  },
+  "social": {
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "discord": "Discord",
+    "matrix": "Matrix",
+    "telegram": "Telegram",
+    "bilibili": "Bilibili",
+    "email": "Email"
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  }
+}

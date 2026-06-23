@@ -1,0 +1,11 @@
+node_modules
+.nuxt
+.output
+dist/
+.wrangler
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.direnv/
