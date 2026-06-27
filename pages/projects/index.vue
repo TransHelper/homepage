@@ -14,7 +14,7 @@ interface Repo {
 const { data: repos, pending, error } = await useFetch<Repo[]>('/api/repos')
 
 useHead({
-  title: `${t('projects.title')} — Trans-Helper`,
+  title: `${t('projects.title')} — TransHelper`,
 })
 
 defineOgImage('OgImageDefault', {

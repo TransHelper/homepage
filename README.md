@@ -1,3 +1,3 @@
-# Trans-Helper Homepage
+# TransHelper Homepage
 
-The official website for [Trans-Helper](https://github.com/Trans-Helper), built with Nuxt.js and deployed to Cloudflare Pages.
+The official website for [TransHelper](https://github.com/TransHelper), built with Nuxt.js and deployed to Cloudflare Pages.

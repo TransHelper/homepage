@@ -1,4 +1,4 @@
-# Trans-Helper Homepage
+# TransHelper Homepage
 
 Tech stack: **Bun + TypeScript + Nuxt.js + Tailwind CSS**
 Deploy target: **Cloudflare Pages**

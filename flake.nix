@@ -1,5 +1,5 @@
 {
-  description = "Trans-Helper Homepage";
+  description = "TransHelper Homepage";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -26,7 +26,7 @@
           ];
 
           shellHook = ''
-            echo "Trans-Helper Homepage — dev shell"
+            echo "TransHelper Homepage — dev shell"
             echo "  bun:    $(bun --version)"
             echo "  node:   $(node --version)"
             echo "  wrangler: $(wrangler --version 2>/dev/null | head -1)"

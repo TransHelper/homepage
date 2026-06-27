@@ -1,22 +1,22 @@
 <script setup lang="ts">
-import { marked } from 'marked'
+import { marked } from "marked";
 
-const README_URL = 'https://raw.githubusercontent.com/Trans-Helper/.github/refs/heads/main/profile/README.md'
+const README_URL = "https://raw.githubusercontent.com/TransHelper/.github/refs/heads/main/profile/README.md";
 
-const { data: raw, pending, error } = await useFetch<string>(README_URL)
+const { data: raw, pending, error } = await useFetch<string>(README_URL);
 
 const html = computed(() => {
-  if (!raw.value) return ''
-  return marked.parse(raw.value) as string
-})
+  if (!raw.value) return "";
+  return marked.parse(raw.value) as string;
+});
 
 useHead({
-  title: 'Trans-Helper',
-})
+  title: "TransHelper",
+});
 
-defineOgImage('OgImageDefault', {
-  title: 'Trans-Helper',
-})
+defineOgImage("OgImageDefault", {
+  title: "TransHelper",
+});
 </script>
 
 <template>
@@ -27,7 +27,11 @@ defineOgImage('OgImageDefault', {
 
     <div v-else-if="error" class="flex flex-col items-center gap-4 py-20 text-center">
       <svg class="h-12 w-12 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"
+        />
       </svg>
       <p class="text-zinc-600 dark:text-zinc-400">Failed to load content. Please try again later.</p>
     </div>
