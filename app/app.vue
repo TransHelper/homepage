@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { siteConfig } from "~~/config/site";
+import IconGithub from "../components/IconGithub.vue";
+import IconTwitter from "../components/IconTwitter.vue";
+import IconDiscord from "../components/IconDiscord.vue";
 
 const { locale, setLocale } = useI18n();
 const localePath = useLocalePath();
