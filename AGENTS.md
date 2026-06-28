@@ -17,7 +17,7 @@ bun run typecheck    # type-check with vue-tsc
 
 ## Deployment
 
-Deployed to Cloudflare Pages. Nuxt generates static output (`.output/public/`) which Cloudflare Pages serves. The `nitro` preset in `nuxt.config.ts` should be `"cloudflare-pages"` for proper output.
+Deployed to Cloudflare Pages. Nuxt generates static output (`dist/`) which Cloudflare Pages serves. The `nitro` preset in `nuxt.config.ts` should be `"cloudflare-pages"` for proper output.
 
 ## Project structure (expected)
 
