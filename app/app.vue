@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { siteConfig } from "~/config/site";
+import { siteConfig } from "~~/config/site";
 
 const { locale, setLocale } = useI18n();
 const localePath = useLocalePath();
@@ -81,7 +81,7 @@ useHead(() => ({
           </svg>
         </div>
         <NuxtLink :to="localePath('/')" class="text-lg font-bold tracking-tight"
-          ><span class="text-fuchsia-500 dark:text-fuchsia-400">Trans-</span>Helper</NuxtLink
+          ><span class="text-fuchsia-500 dark:text-fuchsia-400">Trans</span>Helper</NuxtLink
         >
       </div>
 

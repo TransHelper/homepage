@@ -1,3 +1,4 @@
+import { resolve } from "pathe";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
@@ -40,7 +41,7 @@ export default defineNuxtConfig({
     preference: "system",
     fallback: "dark",
   },
-  css: ["~/assets/css/tailwind.css"],
+  css: [resolve("./assets/css/tailwind.css")],
   modules: [
     "@nuxtjs/google-fonts",
     "@nuxtjs/i18n",
@@ -80,9 +81,6 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: "cloudflare-pages",
-    cloudflare: {
-      compatibilityFlags: ["nodejs_compat"],
-    },
   },
   vite: {
     plugins: [tailwindcss()],
