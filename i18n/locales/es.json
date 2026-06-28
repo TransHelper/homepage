@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "team": "Miembros",
+    "contact": "Contacto",
+    "conduct": "Código de conducta"
+  },
+  "hero": {
+    "title1": "TransHelper",
+    "subtitle": "Creación de software e infraestructura de código abierto para la comunidad trans.",
+    "motto": "Creado para y para la communidad.",
+    "cta": "Explorar proyectos",
+    "demo": "Conocer el equipo",
+    "slogan0": "Código abierto por los derechos trans."
+  },
+  "features": {
+    "oss": "Código 100 % abierto",
+    "community": "Impulsado por la comunidad",
+    "transparent": "La privacidad primero",
+    "permissive": "Enfoque trans"
+  },
+  "projects": {
+    "title": "Nuestros proyectos",
+    "subtitle": "Herramientas de código abierto que creamos y mantenemos para la comunidad trans.",
+    "noDescription": "Terporalmente sin descripciónes.",
+    "empty": "Temporalmene sin proyectos",
+    "error": "No se pudo cargar los proyectos, intentalo de nuevo mas tarde."
+  },
+  "team": {
+    "title": "Conocer nuestro equipo",
+    "subtitle": "Miembros de la comunidad que crean herramientas para nuestra comunidad.",
+    "back": "Volver al Equipo",
+    "empty": "Temporalmente sin miembros."
+  },
+  "social": {
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "discord": "Discord",
+    "matrix": "Matrix",
+    "telegram": "Telegram",
+    "bilibili": "Bilibili",
+    "email": "Email"
+  },
+  "footer": {
+    "copyright": "Reservados todos los derechos."
+  }
+}
