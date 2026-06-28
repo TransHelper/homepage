@@ -84,6 +84,9 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: "cloudflare-pages",
+    cloudflare: {
+      compatibilityFlags: ["nodejs_compat"],
+    },
   },
   vite: {
     optimizeDeps: {

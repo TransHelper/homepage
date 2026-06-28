@@ -17,12 +17,18 @@ export default defineEventHandler(async (event) => {
   const url = `https://api.github.com/orgs/${encodeURIComponent(org)}/repos?per_page=100&sort=updated`;
 
   try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 10000);
+
     const res = await fetch(url, {
+      signal: controller.signal,
       headers: {
         "User-Agent": "TransHelper/1.0",
         Accept: "application/vnd.github+json",
       },
     });
+    clearTimeout(timeout);
+
     if (!res.ok) throw new Error(`GitHub returned ${res.status}`);
     const repos: GitHubRepo[] = await res.json();
 
@@ -43,6 +49,7 @@ export default defineEventHandler(async (event) => {
     setResponseHeader(event, "CDN-Cache-Control", "public, max-age=3600");
     return data;
   } catch (err) {
-    throw createError({ statusCode: 502, statusMessage: `Failed to fetch repos: ${err}` });
+    const message = err instanceof Error ? err.message : String(err);
+    throw createError({ statusCode: 502, statusMessage: message });
   }
 });
