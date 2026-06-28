@@ -41,6 +41,7 @@ export default defineNuxtConfig({
     preference: "system",
     fallback: "dark",
   },
+  components: true,
   css: [resolve("./assets/css/tailwind.css")],
   modules: [
     "@nuxtjs/google-fonts",
@@ -81,6 +82,9 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: "cloudflare-pages",
+    cloudflare: {
+      compatibilityFlags: ["nodejs_compat"],
+    },
   },
   vite: {
     plugins: [tailwindcss()],
