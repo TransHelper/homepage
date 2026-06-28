@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "home": "Inici",
+    "projects": "Projectes",
+    "team": "Members",
+    "contact": "Contacte",
+    "conduct": "Codi de Conducta"
+  },
+  "hero": {
+    "title1": "TransHelper",
+    "subtitle": "Creació de programari i infraestructura de codi obert per a la comunitat trans.",
+    "motto": "Fet de i per a la comunitat.",
+    "cta": "Explora els projectes",
+    "demo": "Coneixer l'equip",
+    "slogan0": "Enginyeria de codi obert pels drets trans",
+    "slogan1": "Privacy-first architecture",
+    "slogan2": "Real needs, real solutions",
+    "slogan3": "Community-driven development"
+  },
+  "features": {
+    "oss": "Codi 100 % obert",
+    "community": "Impulsat per la comunitat",
+    "transparent": "La privacitat, primer",
+    "permissive": "Enfocament trans"
+  },
+  "projects": {
+    "title": "Els nostres projectes",
+    "subtitle": "Eines de codi obert que creem i mantenim per a la comunitat trans.",
+    "noDescription": "Temporalment sense descripció.",
+    "empty": "Temporalment sense projectes.",
+    "error": "No s'han pogut carregar els projectes. Torna-ho a intentar més tard."
+  },
+  "team": {
+    "title": "Coneix el nostre equip",
+    "subtitle": "Membres de la comunitat que creen eines per a la nostra comunitat.",
+    "back": "Torna a l'equip",
+    "empty": "Temporalment sense membres."
+  },
+  "social": {
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "discord": "Discord",
+    "matrix": "Matrix",
+    "telegram": "Telegram",
+    "bilibili": "Bilibili",
+    "email": "Correu electrònic"
+  },
+  "footer": {
+    "copyright": "Tots els drets reservats."
+  }
+}
