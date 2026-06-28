@@ -12,16 +12,16 @@
     "typecheck": "npx vue-tsc --noEmit"
   },
   "dependencies": {
-    "@nuxt/image": "^1.11.0",
+    "@nuxt/image": "^2.0.0",
     "@nuxtjs/color-mode": "^4.0.1",
-    "@nuxtjs/sitemap": "^7.6.0",
+    "@nuxtjs/sitemap": "^8.2.2",
     "@resvg/resvg-js": "^2.6.2",
     "@resvg/resvg-wasm": "^2.6.2",
     "@tailwindcss/typography": "^0.5.20",
     "@takumi-rs/core": "^1.8.7",
     "marked": "^18.0.5",
     "nuxt": "^4.4.8",
-    "nuxt-og-image": "^6.6.0",
+    "nuxt-og-image": "^6.7.0",
     "satori": "^0.26.0",
     "simple-icons": "^16.24.0"
   },
@@ -30,12 +30,12 @@
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/i18n": "^10.4.0",
     "@nuxtjs/tailwindcss": "^6.14.0",
-    "eslint": "^10.5.0",
+    "eslint": "^10.6.0",
     "eslint-config-prettier": "^10.1.8",
-    "prettier": "^3.8.4",
-    "tailwindcss": "~3.4.19",
+    "prettier": "^3.9.1",
+    "tailwindcss": "~4.3.1",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.5",
-    "wrangler": "^4.104.0"
+    "wrangler": "^4.105.0"
   }
 }
