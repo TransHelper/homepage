@@ -1,3 +1,5 @@
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineNuxtConfig({
   compatibilityDate: "2026-06-20",
   app: {
@@ -38,8 +40,8 @@ export default defineNuxtConfig({
     preference: "system",
     fallback: "dark",
   },
+  css: ["~/assets/css/tailwind.css"],
   modules: [
-    "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
     "@nuxtjs/i18n",
     "@nuxt/eslint",
@@ -76,12 +78,6 @@ export default defineNuxtConfig({
     zeroRuntime: true,
   },
 
-  postcss: {
-    plugins: {
-      "@tailwindcss/postcss": false,
-    },
-  },
-
   nitro: {
     preset: "cloudflare-pages",
     cloudflare: {
@@ -89,6 +85,7 @@ export default defineNuxtConfig({
     },
   },
   vite: {
+    plugins: [tailwindcss()],
     optimizeDeps: {
       include: ["marked"],
     },
