@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { siteConfig } from "~~/config/site";
-import IconGithub from "../components/IconGithub.vue";
-import IconTwitter from "../components/IconTwitter.vue";
-import IconDiscord from "../components/IconDiscord.vue";
+import IconGithub from "./components/IconGithub.vue";
+import IconTwitter from "./components/IconTwitter.vue";
+import IconDiscord from "./components/IconDiscord.vue";
 
 const { locale, setLocale } = useI18n();
 const localePath = useLocalePath();
@@ -14,10 +14,12 @@ const navOpen = ref(false);
 const localeOptions = [
   { code: "en", name: "English" },
   { code: "zh", name: "简体中文" },
+  { code: "es", name: "Español" },
+  { code: "ca", name: "Català" },
 ];
 
 function onLocaleChange(event: Event) {
-  const newLocale = (event.target as HTMLSelectElement).value as "en" | "zh";
+  const newLocale = (event.target as HTMLSelectElement).value;
   setLocale(newLocale);
 }
 

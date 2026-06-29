@@ -89,7 +89,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
     optimizeDeps: {
-      include: ["marked"],
+      include: ["marked", "simple-icons", "@vue/devtools-core", "@vue/devtools-kit"],
     },
     server: {
       allowedHosts: ["vite.rhencloud.dev"],
