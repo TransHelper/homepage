@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import { marked } from "marked";
 
-const README_URL = "https://raw.githubusercontent.com/TransHelper/.github/refs/heads/main/profile/README.md";
-
-const { data: raw, pending, error } = await useFetch<string>(README_URL);
+const { data: raw, pending, error } = await useFetch<string>("/api/readme");
 
 const html = computed(() => {
   if (!raw.value) return "";

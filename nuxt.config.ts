@@ -55,6 +55,8 @@ export default defineNuxtConfig({
     locales: [
       { code: "en", iso: "en-US", file: "en.json", name: "English" },
       { code: "zh", iso: "zh-CN", file: "zh-CN.json", name: "简体中文" },
+      { code: "ca", iso: "ca-ES", file: "ca.json", name: "Català" },
+      { code: "es", iso: "es-ES", file: "es.json", name: "Español" },
     ],
     defaultLocale: "zh",
     langDir: "locales",
@@ -62,7 +64,6 @@ export default defineNuxtConfig({
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: "i18n_redirected",
-      redirectOn: "root",
     },
   },
   googleFonts: {
