@@ -1,5 +1,5 @@
 import { marked } from 'marked'
-import { memberSocials } from '~/config/members'
+import { memberSocials } from '~~/config/members'
 
 export interface MemberLocalized {
   slug: string
