@@ -36,7 +36,7 @@ function parseFrontmatter(raw: string) {
 }
 
 function loadMembers(lang: string) {
-  const files = import.meta.glob('/content/{en,zh}/team/*.md', {
+  const files = import.meta.glob('../../content/{en,zh}/team/*.md', {
     eager: true,
     query: '?raw',
     import: 'default',
@@ -44,10 +44,10 @@ function loadMembers(lang: string) {
 
   const prefix = `/content/${lang}/team/`
   return Object.entries(files)
-    .filter(([path]) => path.startsWith(prefix))
+    .filter(([path]) => path.includes(prefix))
     .map(([path, raw]) => {
       const { data, content } = parseFrontmatter(raw)
-      const slug = data.slug || path.replace(prefix, '').replace('.md', '')
+      const slug = data.slug || path.split('/').pop()!.replace('.md', '')
       return {
         slug,
         name: data.name || slug,
