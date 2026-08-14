@@ -4,7 +4,7 @@ import { marked } from "marked";
 const { t } = useI18n();
 const { locale } = useI18n();
 
-const files = import.meta.glob("/content/{en,zh}/conduct.md", {
+const files = import.meta.glob("../../content/{en,zh}/conduct.md", {
   eager: true,
   query: "?raw",
   import: "default",
@@ -12,7 +12,7 @@ const files = import.meta.glob("/content/{en,zh}/conduct.md", {
 
 const html = computed(() => {
   const lang = locale.value.startsWith("zh") ? "zh" : "en";
-  const raw = files[`/content/${lang}/conduct.md`];
+  const raw = files[`../../content/${lang}/conduct.md`];
   return raw ? (marked.parse(raw) as string) : "";
 });
 
