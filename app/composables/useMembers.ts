@@ -59,9 +59,18 @@ function loadMembers(lang: string) {
     })
 }
 
+function shuffleMembers<T>(members: T[]) {
+  const shuffled = [...members]
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[shuffled[i], shuffled[j]] = [shuffled[j]!, shuffled[i]!]
+  }
+  return shuffled
+}
+
 function getMembersForLocale(locale: string) {
   const lang = locale.startsWith('zh') ? 'zh' : 'en'
-  return loadMembers(lang)
+  return shuffleMembers(loadMembers(lang))
 }
 
 export function useMembers() {

@@ -24,4 +24,11 @@ export const memberSocials: Record<string, MemberSocialLinks> = {
     bilibili: "518725775",
     email: "eHVuZmVuZ2p1bjY2NkBzaWl3YXkub3Jn",
   },
+  ayano: {
+    github: "ayyyyano",
+    website: "https://www.nekro.top",
+    telegram: "ayyyyano",
+    bilibili: "501335897",
+    email: "aUBuZWtyby50b3A=",
+  },
 };
