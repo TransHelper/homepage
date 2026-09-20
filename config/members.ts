@@ -31,4 +31,8 @@ export const memberSocials: Record<string, MemberSocialLinks> = {
     bilibili: "501335897",
     email: "aUBuZWtyby50b3A=",
   },
+  daan: {
+    github: "daanser",
+    website: "https://blog.chengxi.moe",
+  },
 };
