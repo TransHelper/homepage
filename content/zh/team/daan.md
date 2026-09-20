@@ -31,7 +31,7 @@ motto: 一名来自 China Mainland 的废物萌新
 
 专为跨性别群体打造的 Flutter 实用工具箱
 
-[Website](https://transprism.chengxi.online/)
+[Website](https://transprism.chengxi.moe/)
 
 ### TransHelper Prism
 
